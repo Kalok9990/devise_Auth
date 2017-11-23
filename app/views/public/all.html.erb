@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Publics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <hr>
+        <h3>Title:</h3>
+        <%= post.title %>
+        <br>
+        <h3>Body:</h3>
+        <%= post.body %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
